@@ -1,0 +1,56 @@
+  <div class="w-50 m-auto">
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th scope="row">Company</th>
+        <td class="text-center">{{company}}</td>
+      </tr>
+      <tr>
+        <th scope="row">License</th>
+        <td class="text-center">{{licenseAmount}}</td>
+      </tr>
+      <tr>
+        <th scope="row">ExpiryDate</th>
+        <td class="text-center">{{expiryDate}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" (click)="openModalUpdate()" *ngIf="userRole == 'admin'">Change license amount</button>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayUpdate}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Update user licenses</h4>
+                <button type="button" class="close" aria-label="Close" (click)="closeModelUpdate()"><span aria-hidden="true">&times;</span></button>
+            </div>
+                <div class="modal-body">
+                <p>How many licenses do you wanna use:</p>
+                <input type="licenseAmount" class="form-control" id="floatingInput" placeholder="{{licenseAmount}}" autocomplete="off" #amount>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" (click)="closeModelUpdate()">Close</button>
+                <button type="button" class="btn btn-success" (click)="submit(amount.value)">submit</button>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayNoNumber}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">No number!</h4>
+                <button type="button" class="close" aria-label="Close" (click)="closeModelNoNumber()"><span aria-hidden="true">&times;</span></button>
+            </div>
+                <div class="modal-body">
+                <p>please fill in a number</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" (click)="closeModelNoNumber()">Close</button>
+            </div>
+        </div>
+    </div>
+ </div>

@@ -1,0 +1,57 @@
+<div class="form-group w-50 m-auto row">
+    <div class="col-sm-6">
+        <label>Company :</label>
+    </div>
+    <div class="dropdown col-sm-6" >
+        <select [(ngModel)]="selectedCompany" >
+            <option *ngFor="let license of licenses" [value]="license.company">
+                {{ license.company }}
+            </option>
+        </select>
+    </div>
+    <div class="col-sm-6 ">
+        <label>License amount:</label>
+    </div>
+    <div class="col-sm-6">
+        <input type="licenseAmount" class="form-control" id="floatingInput" placeholder="{{actualAmount}}" autocomplete="off"  [(ngModel)]="actualAmount">
+    </div>
+</div>
+
+<div class="form-group w-50 m-auto">
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" (click)="openModalGenerate(actualAmount)">Generate</button>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayGenerate}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Generate Certificate</h4>
+                <button type="button" class="close" aria-label="Close" (click)="closeModelGenerate()"><span aria-hidden="true">&times;</span></button>
+            </div>
+                <div class="modal-body">
+                <p>Do you want to generate a certificate for {{selectedCompany}} with {{actualAmount}} licenses</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" (click)="closeModelGenerate()">Close</button>
+                <button type="button" class="btn btn-success" (click)="submit(selectedCompany, actualAmount)">Yes</button>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayNoNumber}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">No number!</h4>
+                <button type="button" class="close" aria-label="Close" (click)="closeModelNoNumber()"><span aria-hidden="true">&times;</span></button>
+            </div>
+                <div class="modal-body">
+                <p>please fill in a number</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" (click)="closeModelNoNumber()">Close</button>
+            </div>
+        </div>
+    </div>
+ </div>

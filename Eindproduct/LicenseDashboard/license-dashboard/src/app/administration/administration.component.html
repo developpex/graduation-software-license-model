@@ -1,0 +1,11 @@
+<div class="w-50 m-auto">
+    <div class="card" style="width: 20rem; margin-top: 20px;" *ngFor="let license of licenses">
+        <div class="card-body">
+        <h5 class="card-title">{{license.company.toUpperCase()}}</h5>
+        <p class="card-text">Last payment: {{license.lastPayment}}</p>
+        <p class="card-text">Expirydate: {{license.expiryDate}}</p>
+        <a class="btn btn-success" (click)="completePayment(license.company)">Complete Payment</a>
+        <br>
+        </div>
+    </div>
+</div>
