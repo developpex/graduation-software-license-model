@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "LicenseService": "Host=localhost;Port=5432;Database=license;Username=postgres;Password=postgres"
+  }
+}

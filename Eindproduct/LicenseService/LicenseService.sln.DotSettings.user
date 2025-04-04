@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5255b0b8_002Df3d2_002D4a8d_002D9cb0_002D6939eb51d046/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateBearerToken_ShouldCreateValidToken" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::E3E5817B-CE87-4E13-822E-278EB95315BA::net6.0::LicenseService.UnitTests.RsaHelperUnitTests.CreateBearerToken_ShouldCreateValidToken&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f8a8c0c_002Dee0a_002D49e9_002D922d_002D0dde4d761e91/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.LicenseControllerServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::E3E5817B-CE87-4E13-822E-278EB95315BA::net6.0::LicenseService.UnitTests.TokenGeneratorUnitTests.CreateBearerToken_ShouldCreateValidToken&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::E3E5817B-CE87-4E13-822E-278EB95315BA::net6.0::LicenseService.UnitTests.TokenGeneratorUnitTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::E3E5817B-CE87-4E13-822E-278EB95315BA::net6.0::LicenseService.UnitTests.WatchdogHelperUnitTests.CheckConnection_SuccessStatusCodeShouldBeTrue_WhenConnectionIsOnline&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::E3E5817B-CE87-4E13-822E-278EB95315BA::net6.0::LicenseService.UnitTests.WatchdogHelperUnitTests.CheckConnection_SuccessStatusCodeShouldBeFalse_WhenConnectionIsOffline&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.ServiceControllerServiceTests.GetCertificate_ShouldReturnStatus200OK_WhenCorrectCompanyIsGiven&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.CertificateControllerServiceTests.GetLicense_ShouldReturnStatus401NofFound_WhenIncorrectCompanyIsGiven&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.CertificateControllerServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.UserControllerServiceTests.GetLicense_ShouldReturnStatus200OK_WhenCorrectCompanyIsGiven&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.UserControllerServiceTests.Login_ShouldReturnStatus406_WhenCorrectLoginCredentialsAreGiven&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::DA313BD2-F8A2-4424-A545-A348A6594812::net6.0::LicenseService.ServiceTests.UserControllerServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::E3E5817B-CE87-4E13-822E-278EB95315BA::net6.0::LicenseService.UnitTests.RsaHelperUnitTests.CreateBearerToken_ShouldCreateValidToken&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,22 @@
+{
+  "ConnectionStrings": {
+    "LicenseService": "Host=localhost;Port=5432;Database=license;Username=postgres;Password=postgres"
+  },
+  "Certificate": {
+    "Directory": "C:\\Users\\Patrick\\Desktop\\Afstudeer Opdracht\\Eindproduct\\LicenseService\\Certificate",
+    "PrivateKey": "C:\\Users\\Patrick\\Desktop\\Afstudeer Opdracht\\Eindproduct\\LicenseService\\PrivateKey\\privatekey.pem"
+  },
+  "JwtBearer": {
+    "TokenSecret": "NjOZM^2gc17sSCEbXwVKMzYn9$f&rjP%",
+    "Issuer": "TBWB/auth",
+    "Audience": "TBWB clients"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
