@@ -1,0 +1,17 @@
+{
+  "Company": {
+    "Name": "tbwb"
+  },
+  "Certificate": {
+    "Location": "C:\\Users\\Patrick\\Desktop\\Afstudeer Opdracht\\Eindproduct\\LicenseManager\\Certificate",
+    "PublicKey": "C:\\Users\\Patrick\\Desktop\\Afstudeer Opdracht\\Eindproduct\\LicenseManager\\PublicKey\\publickey.pem"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
