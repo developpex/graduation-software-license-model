@@ -32,3 +32,4 @@
 /Eindproduct/LicenseService/LicenseService/bin
 /Eindproduct/LicenseService/LicenseService/obj
 /Eindproduct/StockControl/.vscode
+*.tmp
