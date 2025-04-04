@@ -1,0 +1,92 @@
+<body class="text-center">
+    <br>
+    <br>
+    <br>
+    <main class="form-signin w-50 m-auto">
+      <form>
+        <img class="mb-4" src="assets/images/tbwb-logo.jpg" alt="" height="72">
+    
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off" #email>
+          <label for="floatingInput">Email adress</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" autocomplete="off" #password>
+          <label for="floatingPassword">Password</label>
+        </div>
+    
+        <br>
+        <button class="w-100 btn btn-lg btn-success" type="submit" (click)="submit(email.value, password.value)">Log in</button>
+        <button class="w-100 btn btn-lg btn-info" style="margin-top: 50px;" type="submit" (click)="submit('test@test.nl', 'test123!')">Picker </button>
+        <button class="w-100 btn btn-lg btn-info" style="margin-top: 5px;" type="submit" (click)="submit('service@test.nl', 'test123!')">Service</button>
+      </form>
+    </main> 
+</body>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayWrongUserNameOrpassword}">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">Wrong logincredentials</h4>
+              <button type="button" class="close" aria-label="Close" (click)="closeModelWrongUserNameOrpassword()"><span aria-hidden="true">&times;</span></button>
+          </div>
+              <div class="modal-body">
+              <p>Username or Password is incorrect</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" (click)="closeModelWrongUserNameOrpassword()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayLicenseAmountExceeded}">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">Exceeding license amount</h4>
+              <button type="button" class="close" aria-label="Close" (click)="closeModelLicenseAmountExceeded()"><span aria-hidden="true">&times;</span></button>
+          </div>
+              <div class="modal-body">
+              <p>Exceeding licence amount, add more user licenses to proceed</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" (click)="closeModelLicenseAmountExceeded()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayCertificateUnvalid}">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">Invalid Certificate</h4>
+              <button type="button" class="close" aria-label="Close" (click)="closeModelCertificateUnvalid()"><span aria-hidden="true">&times;</span></button>
+          </div>
+              <div class="modal-body">
+              <p>Invalid certificate, contact the service department of TBWB</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" (click)="closeModelCertificateUnvalid()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayExpiryDate}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Exceeded ExpiryDate</h4>
+                <button type="button" class="close" aria-label="Close" (click)="closeModelExpiryDate()"><span aria-hidden="true">&times;</span></button>
+            </div>
+                <div class="modal-body">
+                <p>Only 3 user allowed to log in, please contact TBWB.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" (click)="closeModelExpiryDate()">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>

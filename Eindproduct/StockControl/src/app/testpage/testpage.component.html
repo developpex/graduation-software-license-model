@@ -1,0 +1,19 @@
+<button type="button" class="btn btn-danger" (click)="getCertificate()">Get Certificate</button>
+<button type="button" class="btn btn-primary" (click)="getCertificateFromLicenseService()">Get Certificate From LicenseService</button>
+
+<div class="modal" tabindex="-1" role="dialog"  [ngStyle]="{'display':displayWrongUserNameOrpassword}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Wrong logincredentials</h4>
+                <button type="button" class="close" aria-label="Close" (click)="closeModelWrongUserNameOrpassword()"><span aria-hidden="true">&times;</span></button>
+            </div>
+                <div class="modal-body">
+                <p>Username or Passowrd incorrect</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" (click)="closeModelWrongUserNameOrpassword()">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
